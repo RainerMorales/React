@@ -5,8 +5,8 @@ function Header() {
     <>
       <motion.nav
         initial={{ opacity: 0 }} // Initially hidden (opacity 0)
-        animate={{ opacity: 1  }} // Final state (opacity 1)
-        transition={{ duration:1}} // Duration of 1 second
+        animate={{ opacity: 1 }} // Final state (opacity 1)
+        transition={{ delay:2.5,duration: 1 }} // Duration of 1 second
         className="fixed w-full top-0 left-0 bg-gray-950 shadow-lg backdrop-blur-sm p-4"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">

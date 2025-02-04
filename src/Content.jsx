@@ -1,7 +1,13 @@
+import { motion } from "motion/react";
 function Content() {
   return (
     <>
-      <main className="max-w-4xl m-auto mt-20">
+      <motion.main
+        initial={{ opacity: 0 }} // Initially hidden (opacity 0)
+        animate={{ opacity: 1 }} // Final state (opacity 1)
+        transition={{delay:0.1, duration: 3}} // Duration of 1 second
+        className="max-w-4xl m-auto mt-20"
+      >
         <div className="grid grid-cols-2 gap-3 p-6 m-2 ">
           <div>
             <img src="profile.jpg" alt="" className="rounded-lg m-auto w-56" />
@@ -69,7 +75,10 @@ function Content() {
             <div className="flex-1 border-t border-gray-500 ml-2"></div>
           </div>
           <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
-            <div className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full">
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+            >
               <img
                 className="w-20 m-auto"
                 src="/front.png"
@@ -82,8 +91,11 @@ function Content() {
                 Front-end Developer specializing in HTML, CSS, and JavaScript,
                 with experience using JS frameworks like ReactJS.
               </p>
-            </div>
-            <div className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+            >
               <img
                 className="w-20 m-auto"
                 src="/responsive.png"
@@ -96,8 +108,11 @@ function Content() {
                 Experience in creating responsive designs that adapt seamlessly
                 to different screen sizes and devices.
               </p>
-            </div>
-            <div className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full">
+            </motion.div>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+            >
               <img className="w-20 m-auto" src="/ui.png" alt="UI/UX Design" />
               <p className="text-center font-bold text-indigo-600">
                 UI/UX Design
@@ -106,10 +121,10 @@ function Content() {
                 Good UI/UX design helps users navigate the site easily, and I
                 implement that through clean front-end development.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </main>
+      </motion.main>
     </>
   );
 }
