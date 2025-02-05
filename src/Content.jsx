@@ -34,8 +34,8 @@ function Content() {
             </button>
           </div>
         </div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
-          <div className="rounded-xl bg-gray-900 gap-3 p-6 m-2">
+        <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
+          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
               <svg
                 style={{ height: "20px" }}
@@ -43,7 +43,16 @@ function Content() {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Your SVG content */}
+                <g
+                  id="about-white"
+                  fill="#ffffff"
+                  transform="translate(42.666667, 42.666667)"
+                >
+                  <path
+                    d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z"
+                    id="Shape"
+                  ></path>
+                </g>
               </svg>
               <p className="text-white font-extrabold text-lg">About</p>
             </div>
@@ -53,8 +62,13 @@ function Content() {
               the company's operations.
             </p>
           </div>
-          <div className="rounded-xl bg-gray-900 gap-3 p-6 m-2">
+          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
+              <img
+                style={{ height: "20px", width: "20px" }}
+                src="education.png"
+                alt=""
+              />
               <p className="text-white font-extrabold text-lg">Education</p>
             </div>
             <div className="font-medium text-white">
@@ -70,27 +84,27 @@ function Content() {
           </div>
         </div>
 
-        <div className="rounded-xl gap-3 p-6 m-2 bg-gray-900">
+        <div className="rounded-xl gap-3 p-6 m-2 ">
           <div className="flex items-center">
-            <div className="flex-1 border-t border-gray-500 mr-2"></div>
+            <div className="flex-1 border-2 border-gray-500 mr-2"></div>
             <span className="text-center text-white text-2xl font-bold">
               WHAT I DO
             </span>
-            <div className="flex-1 border-t border-gray-500 ml-2"></div>
+            <div className="flex-1 border-2 border-gray-500 ml-2"></div>
           </div>
-          <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
+          <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
             <motion.div
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
-              whileInView={{ delay: 0.25, opacity: 1 }}
-              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              whileInView={{ delay: 0.5, opacity: 1 }}
+              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
                 className="w-20 m-auto"
-                src="/front.png"
+                src="front.png"
                 alt="Front-End Development"
               />
-              <p className="text-center font-bold text-indigo-600">
+              <p className=" text-center font-bold text-indigo-800">
                 Front-End Development
               </p>
               <p className="text-center font-light m-auto py-4">
@@ -101,15 +115,15 @@ function Content() {
             <motion.div
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
-              whileInView={{ delay: 0.25, opacity: 1 }}
-              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              whileInView={{ delay: 0.5, opacity: 1 }}
+              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
                 className="w-20 m-auto"
-                src="/responsive.png"
+                src="responsive.png"
                 alt="Responsive Design"
               />
-              <p className="text-center font-bold text-indigo-600">
+              <p className="text-center font-bold text-indigo-800">
                 Responsive Design
               </p>
               <p className="text-center font-light m-auto py-4">
@@ -120,11 +134,11 @@ function Content() {
             <motion.div
               whileHover={{ scale: 1.1 }}
               initial={{ opacity: 0 }}
-              whileInView={{ delay: 0.25, opacity: 1 }}
-              className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              whileInView={{ opacity: 1 }}
+              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
-              <img className="w-20 m-auto" src="/ui.png" alt="UI/UX Design" />
-              <p className="text-center font-bold text-indigo-600">
+              <img className="w-20 m-auto" src="design.png" alt="UI/UX Design" />
+              <p className="text-center font-bold text-indigo-800">
                 UI/UX Design
               </p>
               <p className="text-center font-light m-auto py-4">

@@ -10,7 +10,7 @@ function Header() {
         className="fixed w-full top-0 left-0 bg-gray-950 shadow-lg backdrop-blur-sm p-4"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <a href="#" className="text-white  text-2xl font-bold">
+          <a href="index.html" className="text-white  text-2xl font-bold">
             <span className="text-indigo-600">Web</span>Dev
           </a>
           <div className="hidden md:flex space-x-6">
