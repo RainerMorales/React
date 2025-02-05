@@ -1,11 +1,15 @@
+import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
+
+
 function Content() {
+  
   return (
     <>
       <motion.main
-        initial={{ opacity: 0 }} // Initially hidden (opacity 0)
-        animate={{ opacity: 1 }} // Final state (opacity 1)
-        transition={{delay:0.1, duration: 3}} // Duration of 1 second
+        initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
+        animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
+        transition={{ duration: 0.5 }} // Duration of 1 second
         className="max-w-4xl m-auto mt-20"
       >
         <div className="grid grid-cols-2 gap-3 p-6 m-2 ">
@@ -20,13 +24,13 @@ function Content() {
             <p className="text-white font-extralight">Front-End Developer</p>
             <button className="mt-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-3 rounded inline-flex items-center">
               <svg
-                className="fill-current w-4 h-4 mr-2"
+                className="fill-current w-3 h-4 mr-1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
               >
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
               </svg>
-              <span>Download CV</span>
+              <span>Resume</span>
             </button>
           </div>
         </div>
@@ -77,6 +81,8 @@ function Content() {
           <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
             <motion.div
               whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ delay: 0.25, opacity: 1 }}
               className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
@@ -94,6 +100,8 @@ function Content() {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ delay: 0.25, opacity: 1 }}
               className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
@@ -111,6 +119,8 @@ function Content() {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ delay: 0.25, opacity: 1 }}
               className="bg-white items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img className="w-20 m-auto" src="/ui.png" alt="UI/UX Design" />

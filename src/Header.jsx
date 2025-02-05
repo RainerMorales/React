@@ -4,9 +4,9 @@ function Header() {
   return (
     <>
       <motion.nav
-        initial={{ opacity: 0 }} // Initially hidden (opacity 0)
-        animate={{ opacity: 1 }} // Final state (opacity 1)
-        transition={{ delay:2.5,duration: 1 }} // Duration of 1 second
+        initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
+        animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
+        transition={{ delay: 1, duration: 0.5 }} // Duration of 1 second
         className="fixed w-full top-0 left-0 bg-gray-950 shadow-lg backdrop-blur-sm p-4"
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -33,6 +33,7 @@ function Header() {
               Contact
             </a>
           </div>
+
           <div className="md:hidden">
             <button id="menu-btn" className="text-white">
               <svg
