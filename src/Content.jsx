@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
-
 function Content() {
-  
   return (
     <>
       <motion.main
         initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
         animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
-        transition={{ duration: 0.5 }} // Duration of 1 second
+        transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
         className="max-w-4xl m-auto mt-20"
       >
         <div className="grid grid-cols-2 gap-3 p-6 m-2 ">
@@ -22,7 +20,7 @@ function Content() {
             </p>
             <p className="text-white font-extralight  ">Philippines</p>
             <p className="text-white font-extralight">Front-End Developer</p>
-            <button className="mt-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-3 rounded inline-flex items-center">
+            {/* <button className="mt-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-3 rounded inline-flex items-center">
               <svg
                 className="fill-current w-3 h-4 mr-1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +29,7 @@ function Content() {
                 <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
               </svg>
               <span>Resume</span>
-            </button>
+            </button> */}
           </div>
         </div>
         <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
@@ -82,9 +80,62 @@ function Content() {
               </p>
             </div>
           </div>
+          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+            <div className="flex items-center gap-2">
+              <img
+                style={{ height: "20px", width: "20px" }}
+                src="briefcase.png"
+                alt=""
+              />
+              <p className="text-white font-extrabold text-lg">Experience</p>
+            </div>
+            <div className="font-medium text-white">
+              <p className="px-7 mt-2">
+                Centro Medico De Santisimo Rosario
+                <br />
+                <span className="font-light">
+                  Technical Support - Intern
+                  <br />
+                  March 2024 - June 2024
+                </span>
+              </p>
+            </div>
+          </div>
+          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+            <div className="flex items-center gap-2">
+              <img
+                style={{ height: "20px", width: "20px" }}
+                src="code.png"
+                alt=""
+              />
+              <p className="text-white font-extrabold text-lg">Tech Stack</p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-2 px-7 mt-2">
+              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                HTML
+              </span>
+              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                CSS
+              </span>
+              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                Javascript
+              </span>
+              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                Tailwind CSS
+              </span>
+              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                React JS
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div className="rounded-xl gap-3 p-6 m-2 ">
+        <motion.div
+          initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
+          animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="rounded-xl gap-3 p-6 m-2 "
+        >
           <div className="flex items-center">
             <div className="flex-1 border-2 border-gray-500 mr-2"></div>
             <span className="text-center text-white text-2xl font-bold">
@@ -94,9 +145,12 @@ function Content() {
           </div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
             <motion.div
-              whileHover={{ scale: 1.1 }}
+              whileHover={{
+                scale: 1.1,
+              }}
+              transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
-              whileInView={{ delay: 0.5, opacity: 1 }}
+              whileInView={{ opacity: 1 }}
               className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
@@ -114,6 +168,7 @@ function Content() {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
+              transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
               whileInView={{ delay: 0.5, opacity: 1 }}
               className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
@@ -133,11 +188,16 @@ function Content() {
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.1 }}
+              transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
-              <img className="w-20 m-auto" src="design.png" alt="UI/UX Design" />
+              <img
+                className="w-20 m-auto"
+                src="design.png"
+                alt="UI/UX Design"
+              />
               <p className="text-center font-bold text-indigo-800">
                 UI/UX Design
               </p>
@@ -147,7 +207,7 @@ function Content() {
               </p>
             </motion.div>
           </div>
-        </div>
+        </motion.div>
       </motion.main>
     </>
   );
