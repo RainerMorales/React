@@ -12,24 +12,25 @@ function Content() {
       >
         <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 p-6 m-2 ">
           <div>
-            <img src="profile.jpg" alt="" className="rounded-lg m-auto w-56" />
+            <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-56" />
           </div>
           <div className="flex flex-col items-center justify-center">
             <p className=" font-extrabold text-white text-4xl">
               Rainer Morales
             </p>
-            <p className="text-white font-extralight  ">Philippines</p>
+            <p className="text-amber-400 font-extralight  ">Philippines</p>
             <p className="text-white font-extralight">Front-End Developer</p>
-            {/* <button className="mt-5 bg-gray-300 hover:bg-gray-400 text-gray-800 font-medium py-2 px-3 rounded inline-flex items-center">
-              <svg
-                className="fill-current w-3 h-4 mr-1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-              >
-                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-              </svg>
-              <span>Resume</span>
-            </button> */}
+            <div className="flex flex-row gap-6 w-30 justify-center items-center mt-7">
+              <a href="">
+                <img src="github.png" alt="" />
+              </a>
+              <a href="https://www.facebook.com/ka.rainerr">
+                <img src="facebook.png" alt="" />
+              </a>
+              <a href="https://www.instagram.com/ka.rainer">
+                <img src="instagram.png" alt="" />
+              </a>
+            </div>
           </div>
         </div>
         <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
@@ -140,11 +141,11 @@ function Content() {
           className="rounded-xl gap-3 p-6 m-2 "
         >
           <div className="flex items-center">
-            <div className="flex-1 border-2 border-gray-500 mr-2"></div>
+            <div className="flex-1 border-3 border-amber-900 mr-2"></div>
             <span className="text-center text-white text-2xl font-bold">
               WHAT I DO
             </span>
-            <div className="flex-1 border-2 border-gray-500 ml-2"></div>
+            <div className="flex-1 border-3 border-amber-900 ml-2"></div>
           </div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
             <motion.div
@@ -161,7 +162,7 @@ function Content() {
                 src="front.png"
                 alt="Front-End Development"
               />
-              <p className=" text-center font-bold text-indigo-800">
+              <p className=" text-center font-bold text-white">
                 Front-End Development
               </p>
               <p className="text-center font-light m-auto py-4">
@@ -181,7 +182,7 @@ function Content() {
                 src="responsive.png"
                 alt="Responsive Design"
               />
-              <p className="text-center font-bold text-indigo-800">
+              <p className="text-center font-bold text-white">
                 Responsive Design
               </p>
               <p className="text-center font-light m-auto py-4">
@@ -201,9 +202,7 @@ function Content() {
                 src="design.png"
                 alt="UI/UX Design"
               />
-              <p className="text-center font-bold text-indigo-800">
-                UI/UX Design
-              </p>
+              <p className="text-center font-bold text-white">UI/UX Design</p>
               <p className="text-center font-light m-auto py-4">
                 Good UI/UX design helps users navigate the site easily, and I
                 implement that through clean front-end development.
@@ -220,7 +219,7 @@ function Content() {
             <span>
               <img src="text.gif" alt="" width={30} />
             </span>
-            Under Development
+            Under Development!
           </button>
         </div>
       </motion.main>
