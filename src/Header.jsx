@@ -34,7 +34,7 @@ function Header() {
             </a>
           </div>
 
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <button id="menu-btn" className="text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ function Header() {
                 />
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </motion.nav>
     </>

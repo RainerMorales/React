@@ -6,14 +6,15 @@ function Footer(){
             <a href="">
               <img src="github.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://www.facebook.com/ka.rainerr">
               <img src="facebook.png" alt="" />
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/ka.rainer">
               <img src="instagram.png" alt="" />
             </a>
           </div>
-          <span  className="text-center text-white">©2025 Rainer Morales</span>
+          <span className="text-center text-white">©2025 Rainer Morales</span>
+          
         </footer>
       </>
     );

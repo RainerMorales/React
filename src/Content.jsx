@@ -10,12 +10,12 @@ function Content() {
         transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
         className="max-w-4xl m-auto mt-20"
       >
-        <div className="grid grid-cols-2 gap-3 p-6 m-2 ">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 p-6 m-2 ">
           <div>
             <img src="profile.jpg" alt="" className="rounded-lg m-auto w-56" />
           </div>
           <div className="flex flex-col items-center justify-center">
-            <p className=" font-extrabold text-white lg:text-4xl md:text-4xl sm:text-4xl">
+            <p className=" font-extrabold text-white text-4xl">
               Rainer Morales
             </p>
             <p className="text-white font-extralight  ">Philippines</p>
@@ -111,19 +111,22 @@ function Content() {
               <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
             <div className="flex flex-wrap justify-center gap-2 px-7 mt-2">
-              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
                 HTML
               </span>
-              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
                 CSS
               </span>
-              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
                 Javascript
               </span>
-              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+                Bootstrap
+              </span>
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
                 Tailwind CSS
               </span>
-              <span class="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
+              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
                 React JS
               </span>
             </div>
@@ -208,6 +211,18 @@ function Content() {
             </motion.div>
           </div>
         </motion.div>
+        <div className="fixed bottom-6 right-3 mx-w-20 ">
+          <div></div>
+          <button
+            type="button"
+            class="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
+          >
+            <span>
+              <img src="text.gif" alt="" width={30} />
+            </span>
+            Under Development
+          </button>
+        </div>
       </motion.main>
     </>
   );
