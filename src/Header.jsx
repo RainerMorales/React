@@ -11,7 +11,7 @@ function Header() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="index.html" className="text-white  text-2xl font-bold">
-            <span className="text-amber-500">Port</span>folio
+            <span className="text-indigo-900">Port</span>folio
           </a>
           <div className="hidden md:flex space-x-6">
             <a

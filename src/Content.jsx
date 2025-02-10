@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
 function Content() {
+  const message = () => {
+    alert("Coming Soon!");
+  };
   return (
     <>
       <motion.main
@@ -18,8 +20,8 @@ function Content() {
             <p className=" font-extrabold text-white text-4xl">
               Rainer Morales
             </p>
-            <p className="text-amber-400 font-extralight  ">Philippines</p>
-            <p className="text-white font-extralight">Front-End Developer</p>
+            <p className="text-white font-extralight  ">Philippines</p>
+            <p className="text-white font-extralight">Web Developer</p>
             <div className="flex flex-row gap-6 w-30 justify-center items-center mt-7">
               <a href="">
                 <img src="github.png" alt="" />
@@ -34,7 +36,7 @@ function Content() {
           </div>
         </div>
         <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
-          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+          <div className=" gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
               <svg
                 style={{ height: "20px" }}
@@ -61,7 +63,7 @@ function Content() {
               the company's operations.
             </p>
           </div>
-          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+          <div className="  gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
               <img
                 style={{ height: "20px", width: "20px" }}
@@ -81,7 +83,7 @@ function Content() {
               </p>
             </div>
           </div>
-          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+          <div className=" gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
               <img
                 style={{ height: "20px", width: "20px" }}
@@ -102,7 +104,7 @@ function Content() {
               </p>
             </div>
           </div>
-          <div className="rounded-xl border-4 border-gray-900 gap-3 p-6 m-2">
+          <div className=" gap-3 p-6 m-2">
             <div className="flex items-center gap-2">
               <img
                 style={{ height: "20px", width: "20px" }}
@@ -140,12 +142,8 @@ function Content() {
           transition={{ delay: 0.4, duration: 0.5 }}
           className="rounded-xl gap-3 p-6 m-2 "
         >
-          <div className="flex items-center">
-            <div className="flex-1 border-3 border-amber-900 mr-2"></div>
-            <span className="text-center text-white text-2xl font-bold">
-              WHAT I DO
-            </span>
-            <div className="flex-1 border-3 border-amber-900 ml-2"></div>
+          <div className="m-auto text-center text-white text-2xl font-bold">
+            WHAT I DO
           </div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
             <motion.div
@@ -211,15 +209,15 @@ function Content() {
           </div>
         </motion.div>
         <div className="fixed bottom-6 right-3 mx-w-20 ">
-          <div></div>
           <button
+            onClick={message}
             type="button"
             class="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
           >
             <span>
               <img src="text.gif" alt="" width={30} />
             </span>
-            Under Development!
+            Message Me!
           </button>
         </div>
       </motion.main>
