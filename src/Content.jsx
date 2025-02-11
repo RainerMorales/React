@@ -10,13 +10,13 @@ function Content() {
         initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
         animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
         transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
-        className="max-w-4xl m-auto mt-20"
+        className="max-w-4xl m-auto mt-25"
       >
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 p-6 m-2 ">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1">
           <div>
-            <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-56" />
+            <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-46" />
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center m-9">
             <p className=" font-extrabold text-white text-4xl">
               Rainer Morales
             </p>
@@ -35,26 +35,9 @@ function Content() {
             </div>
           </div>
         </div>
-        <div className=" grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2">
-          <div className=" gap-3 p-6 m-2">
-            <div className="flex items-center gap-2">
-              <svg
-                style={{ height: "20px" }}
-                viewBox="0 0 512 512"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g
-                  id="about-white"
-                  fill="#ffffff"
-                  transform="translate(42.666667, 42.666667)"
-                >
-                  <path
-                    d="M213.333333,3.55271368e-14 C95.51296,3.55271368e-14 3.55271368e-14,95.51168 3.55271368e-14,213.333333 C3.55271368e-14,331.153707 95.51296,426.666667 213.333333,426.666667 C331.154987,426.666667 426.666667,331.153707 426.666667,213.333333 C426.666667,95.51168 331.154987,3.55271368e-14 213.333333,3.55271368e-14 Z M213.333333,384 C119.227947,384 42.6666667,307.43872 42.6666667,213.333333 C42.6666667,119.227947 119.227947,42.6666667 213.333333,42.6666667 C307.44,42.6666667 384,119.227947 384,213.333333 C384,307.43872 307.44,384 213.333333,384 Z M240.04672,128 C240.04672,143.46752 228.785067,154.666667 213.55008,154.666667 C197.698773,154.666667 186.713387,143.46752 186.713387,127.704107 C186.713387,112.5536 197.99616,101.333333 213.55008,101.333333 C228.785067,101.333333 240.04672,112.5536 240.04672,128 Z M192.04672,192 L234.713387,192 L234.713387,320 L192.04672,320 L192.04672,192 Z"
-                    id="Shape"
-                  ></path>
-                </g>
-              </svg>
+        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12">
+          <div className="ml-3 border-l-4 border-blue-700 h-40 ">
+            <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">About</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
@@ -63,76 +46,39 @@ function Content() {
               the company's operations.
             </p>
           </div>
-          <div className="  gap-3 p-6 m-2">
-            <div className="flex items-center gap-2">
-              <img
-                style={{ height: "20px", width: "20px" }}
-                src="education.png"
-                alt=""
-              />
+          <div className="ml-3 border-l-4 border-blue-700 h-40 ">
+            <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Education</p>
             </div>
-            <div className="font-medium text-white">
-              <p className="px-7 mt-2">
+            <p className="px-7 mt-2 text-white font-light">
+              <span className="font-bold">
                 Eastwoods Professional College of Science and Technology
-                <br />
-                <span className="font-light">
-                  Bachelor of Science in Information Technology
-                  <br />- 2020-2024
-                </span>
-              </p>
-            </div>
+                <br></br>
+              </span>
+              Bachelor of Science in Information Technology - 2020-2024
+            </p>
           </div>
-          <div className=" gap-3 p-6 m-2">
-            <div className="flex items-center gap-2">
-              <img
-                style={{ height: "20px", width: "20px" }}
-                src="briefcase.png"
-                alt=""
-              />
+          <div className="ml-3 border-l-4 border-blue-700 h-40">
+            <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Experience</p>
             </div>
-            <div className="font-medium text-white">
-              <p className="px-7 mt-2">
+            <p className="px-7 mt-2 text-white font-light">
+              <span className="font-bold">
                 Centro Medico De Santisimo Rosario
-                <br />
-                <span className="font-light">
-                  Technical Support - Intern
-                  <br />
-                  March 2024 - June 2024
-                </span>
-              </p>
-            </div>
+              </span><br />
+              Technical Support - Intern <br />   
+              March 2024 - June 2024
+            </p>
           </div>
-          <div className=" gap-3 p-6 m-2">
-            <div className="flex items-center gap-2">
-              <img
-                style={{ height: "20px", width: "20px" }}
-                src="code.png"
-                alt=""
-              />
+          <div className="ml-3 border-l-4 border-blue-700 h-40">
+            <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
-            <div className="flex flex-wrap justify-center gap-2 px-7 mt-2">
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                HTML
-              </span>
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                CSS
-              </span>
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                Javascript
-              </span>
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                Bootstrap
-              </span>
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                Tailwind CSS
-              </span>
-              <span className="text-white border-2 border-gray-700 text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm">
-                React JS
-              </span>
-            </div>
+            <p className="px-7 mt-2 text-white font-light">
+              I aim to secure a position in the IT or management sectors, which
+              will allow me to utilize my education and skills to contribute to
+              the company's operations.
+            </p>
           </div>
         </div>
 
@@ -140,7 +86,7 @@ function Content() {
           initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
           animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="rounded-xl gap-3 p-6 m-2 "
+          className="mt-30"
         >
           <div className="m-auto text-center text-white text-2xl font-bold">
             WHAT I DO
@@ -153,7 +99,7 @@ function Content() {
               transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
                 className="w-20 m-auto"
@@ -173,7 +119,7 @@ function Content() {
               transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
               whileInView={{ delay: 0.5, opacity: 1 }}
-              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
                 className="w-20 m-auto"
@@ -193,7 +139,7 @@ function Content() {
               transition={{ delay: 0.3 }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              className="border-4 border-gray-900 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
             >
               <img
                 className="w-20 m-auto"
@@ -209,7 +155,10 @@ function Content() {
           </div>
         </motion.div>
         <div className="fixed bottom-6 right-3 mx-w-20 ">
-          <button
+          <motion.button
+            initial={{ opacity: 0 }} // Initially hidden (opacity 0)
+            animate={{ opacity: 1 }} // Final state (opacity 1)
+            transition={{ delay: 2, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
             class="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
@@ -217,8 +166,8 @@ function Content() {
             <span>
               <img src="text.gif" alt="" width={30} />
             </span>
-            Message Me!
-          </button>
+            Under Development!
+          </motion.button>
         </div>
       </motion.main>
     </>
