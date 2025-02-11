@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 
 function Content() {
   const message = () => {
-    alert("Coming Soon!");
+    alert("under development ^_^");
   };
   return (
     <>
@@ -16,7 +16,7 @@ function Content() {
           <div>
             <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-46" />
           </div>
-          <div className="flex flex-col items-center justify-center m-9">
+          <div className="flex flex-col items-center justify-center mt-9">
             <p className=" font-extrabold text-white text-4xl">
               Rainer Morales
             </p>
@@ -36,7 +36,7 @@ function Content() {
           </div>
         </div>
         <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12">
-          <div className="ml-3 border-l-4 border-blue-700 h-40 ">
+          <div className="ml-3 border-l-3 border-blue-700 h-40 ">
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">About</p>
             </div>
@@ -46,7 +46,7 @@ function Content() {
               the company's operations.
             </p>
           </div>
-          <div className="ml-3 border-l-4 border-blue-700 h-40 ">
+          <div className="ml-3 border-l-3 border-blue-700 h-40 ">
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Education</p>
             </div>
@@ -58,26 +58,42 @@ function Content() {
               Bachelor of Science in Information Technology - 2020-2024
             </p>
           </div>
-          <div className="ml-3 border-l-4 border-blue-700 h-40">
+          <div className="ml-3 border-l-3 border-blue-700 h-40">
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Experience</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               <span className="font-bold">
                 Centro Medico De Santisimo Rosario
-              </span><br />
-              Technical Support - Intern <br />   
+              </span>
+              <br />
+              Technical Support - Intern <br />
               March 2024 - June 2024
             </p>
           </div>
-          <div className="ml-3 border-l-4 border-blue-700 h-40">
+          <div className="ml-3 border-l-3 border-blue-700 h-40">
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
-            <p className="px-7 mt-2 text-white font-light">
-              I aim to secure a position in the IT or management sectors, which
-              will allow me to utilize my education and skills to contribute to
-              the company's operations.
+            <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                HTML
+              </span>
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                CSS
+              </span>
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                JAVASCRIPT
+              </span>
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                BOOTSTRAP
+              </span>
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                TAILWIND CSS
+              </span>
+              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+                REACT JS
+              </span>
             </p>
           </div>
         </div>
@@ -166,7 +182,7 @@ function Content() {
             <span>
               <img src="text.gif" alt="" width={30} />
             </span>
-            Under Development!
+            Message me!
           </motion.button>
         </div>
       </motion.main>
