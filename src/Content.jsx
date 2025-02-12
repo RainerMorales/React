@@ -2,7 +2,27 @@ import { motion } from "motion/react";
 
 function Content() {
   const message = () => {
-    alert("under development ^_^");
+    document.getElementById("messages").innerHTML = `
+    <div id="alert-1" class="justify-center flex items-center p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400" role="alert">
+      <svg class="shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+      </svg>
+      <span class="sr-only">Info</span>
+      <div>
+        <span class="font-medium">Under Development! </span>
+      </div>
+    </div> `;
+    document.getElementById("close-alert");
+    setTimeout(() => {
+      let alertBox = document.getElementById("alert-1");
+      if (alertBox) {
+        alertBox.classList.add(
+          "opacity-0",
+          "transition-opacity",
+          "duration-500"
+        );
+      }
+    }, 3000);
   };
   return (
     <>
@@ -12,6 +32,10 @@ function Content() {
         transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
         className="max-w-4xl m-auto mt-25"
       >
+        <div
+          id="messages"
+          className="text-white fixed w-50 m-auto left-0 right-0"
+        ></div>
         <div className="grid lg:grid-cols-2 sm:grid-cols-1">
           <div>
             <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-46" />
@@ -22,7 +46,7 @@ function Content() {
             </p>
             <p className="text-white font-extralight  ">Philippines</p>
             <p className="text-white font-extralight">Web Developer</p>
-            <div className="flex flex-row gap-6 w-30 justify-center items-center mt-7">
+            <div className="flex flex-row gap-6 w-35 justify-center items-center mt-7">
               <a href="">
                 <img src="github.png" alt="" />
               </a>
@@ -76,22 +100,22 @@ function Content() {
               <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
             <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 HTML
               </span>
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 CSS
               </span>
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 JAVASCRIPT
               </span>
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 BOOTSTRAP
               </span>
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 TAILWIND CSS
               </span>
-              <span class="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 REACT JS
               </span>
             </p>
@@ -102,9 +126,8 @@ function Content() {
           initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
           animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-30"
         >
-          <div className="m-auto text-center text-white text-2xl font-bold">
+          <div className="m-auto text-center text-white text-6xl font-bold mt-60 mb-20">
             WHAT I DO
           </div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
@@ -177,7 +200,7 @@ function Content() {
             transition={{ delay: 2, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
-            class="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
+            className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
           >
             <span>
               <img src="text.gif" alt="" width={30} />
