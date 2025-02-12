@@ -26,17 +26,17 @@ function Content() {
   };
   return (
     <>
-      <motion.main
-        initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
-        animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
-        transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
-        className="max-w-4xl m-auto mt-25"
-      >
+      <main className="max-w-4xl m-auto mt-25">
         <div
           id="messages"
           className="text-white fixed w-50 m-auto left-0 right-0"
         ></div>
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1">
+        <motion.div
+          initial={{ opacity: 0 }} // Initially hidden (opacity 0)
+          animate={{ opacity: 1 }} // Final state (opacity 1)
+          transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
+          className="grid lg:grid-cols-2 sm:grid-cols-1"
+        >
           <div>
             <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-46" />
           </div>
@@ -58,9 +58,16 @@ function Content() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
         <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12">
-          <div className="ml-3 border-l-3 border-blue-700 h-40 ">
+          <motion.div
+            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
+            exit={{ opacity: 0 }} // Optional: Hides when removed
+            transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
+            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
+            className="ml-3 border-l-3 border-blue-700 h-40 "
+          >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">About</p>
             </div>
@@ -69,8 +76,15 @@ function Content() {
               will allow me to utilize my education and skills to contribute to
               the company's operations.
             </p>
-          </div>
-          <div className="ml-3 border-l-3 border-blue-700 h-40 ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
+            exit={{ opacity: 0 }} // Optional: Hides when removed
+            transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
+            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
+            className="ml-3 border-l-3 border-blue-700 h-40 "
+          >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Education</p>
             </div>
@@ -81,8 +95,15 @@ function Content() {
               </span>
               Bachelor of Science in Information Technology - 2020-2024
             </p>
-          </div>
-          <div className="ml-3 border-l-3 border-blue-700 h-40">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
+            exit={{ opacity: 0 }} // Optional: Hides when removed
+            transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
+            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
+            className="ml-3 border-l-3 border-blue-700 h-40"
+          >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Experience</p>
             </div>
@@ -94,8 +115,15 @@ function Content() {
               Technical Support - Intern <br />
               March 2024 - June 2024
             </p>
-          </div>
-          <div className="ml-3 border-l-3 border-blue-700 h-40">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
+            exit={{ opacity: 0 }} // Optional: Hides when removed
+            transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
+            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
+            className="ml-3 border-l-3 border-blue-700 h-40"
+          >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
@@ -119,26 +147,24 @@ function Content() {
                 REACT JS
               </span>
             </p>
-          </div>
+          </motion.div>
         </div>
 
-        <motion.div
-          initial={{ y: "-30px", opacity: 0 }} // Initially hidden (opacity 0)
-          animate={{ y: "0px", opacity: 1 }} // Final state (opacity 1)
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
+        <motion.div>
           <div className="m-auto text-center text-white text-6xl font-bold mt-60 mb-20">
             WHAT I DO
           </div>
-          <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-4 p-6">
+          <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-9 ">
             <motion.div
               whileHover={{
                 scale: 1.1,
               }}
-              transition={{ delay: 0.3 }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              initial={{ opacity: 0, y: "0px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              exit={{ opacity: 0 }} // Optional: Hides when removed
+              transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
+              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
+              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
@@ -154,11 +180,12 @@ function Content() {
               </p>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ delay: 0.3 }}
-              initial={{ opacity: 0 }}
-              whileInView={{ delay: 0.5, opacity: 1 }}
-              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              initial={{ opacity: 0, y: "0px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              exit={{ opacity: 0 }} // Optional: Hides when removed
+              transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
+              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
+              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
@@ -174,11 +201,12 @@ function Content() {
               </p>
             </motion.div>
             <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ delay: 0.3 }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              className="border-b-4 border-blue-600 items-center gap-3 p-6 m-auto shadow-lg rounded-lg h-full"
+              initial={{ opacity: 0, y: "0px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              exit={{ opacity: 0 }} // Optional: Hides when removed
+              transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
+              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
+              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
@@ -197,7 +225,7 @@ function Content() {
           <motion.button
             initial={{ opacity: 0 }} // Initially hidden (opacity 0)
             animate={{ opacity: 1 }} // Final state (opacity 1)
-            transition={{ delay: 2, duration: 0.5 }} // Duration of 1 second
+            transition={{ delay: 1, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
             className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
@@ -208,7 +236,7 @@ function Content() {
             Message me!
           </motion.button>
         </div>
-      </motion.main>
+      </main>
     </>
   );
 }
