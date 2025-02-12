@@ -12,7 +12,6 @@ function Content() {
         <span class="font-medium">Under Development! </span>
       </div>
     </div> `;
-    document.getElementById("close-alert");
     setTimeout(() => {
       let alertBox = document.getElementById("alert-1");
       if (alertBox) {
@@ -38,7 +37,7 @@ function Content() {
           className="grid lg:grid-cols-2 sm:grid-cols-1"
         >
           <div>
-            <img src="profilee.jpg" alt="" className="rounded-lg m-auto w-46" />
+            <img src="profile12.jpg" alt="" className="rounded m-auto w-46" />
           </div>
           <div className="flex flex-col items-center justify-center mt-9">
             <p className=" font-extrabold text-white text-4xl">
@@ -61,15 +60,14 @@ function Content() {
         </motion.div>
         <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12">
           <motion.div
-            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            initial={{ opacity: 0}} // Initially hidden
             whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
             exit={{ opacity: 0 }} // Optional: Hides when removed
             transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
-            className="ml-3 border-l-3 border-blue-700 h-40 "
+            className="ml-7 border-l-3 border-blue-700 h-40 "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">About</p>
+              <p className="text-white font-extrabold text-lg">ABOUT</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               I aim to secure a position in the IT or management sectors, which
@@ -78,34 +76,33 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            initial={{ opacity: 0}} // Initially hidden
             whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
             exit={{ opacity: 0 }} // Optional: Hides when removed
             transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
-            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
-            className="ml-3 border-l-3 border-blue-700 h-40 "
+            className="ml-7 border-l-3 border-blue-700 h-40 "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Education</p>
+              <p className="text-white font-extrabold text-lg">EDUCATION</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               <span className="font-bold">
                 Eastwoods Professional College of Science and Technology
                 <br></br>
               </span>
-              Bachelor of Science in Information Technology - 2020-2024
+              Bachelor of Science in Information Technology <br />
+              2020-2024
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            initial={{ opacity: 0}} // Initially hidden
             whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
             exit={{ opacity: 0 }} // Optional: Hides when removed
             transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
-            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
-            className="ml-3 border-l-3 border-blue-700 h-40"
+            className="ml-7 border-l-3 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Experience</p>
+              <p className="text-white font-extrabold text-lg">EXPERIENCE</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               <span className="font-bold">
@@ -117,15 +114,14 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0, x: "10px" }} // Initially hidden
+            initial={{ opacity: 0}} // Initially hidden
             whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
             exit={{ opacity: 0 }} // Optional: Hides when removed
             transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
-            viewport={{ once: false, amount: 0.2 }} // Repeats every time it enters view
-            className="ml-3 border-l-3 border-blue-700 h-40"
+            className="ml-7 border-l-3 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Tech Stack</p>
+              <p className="text-white font-extrabold text-lg">TECH STACK</p>
             </div>
             <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
               <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
@@ -149,18 +145,20 @@ function Content() {
             </p>
           </motion.div>
         </div>
-
+        <motion.div
+          initial={{ opacity: 0, y: "40px" }} // Initially hidden
+          whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
+          exit={{ opacity: 0 }} // Optional: Hides when removed
+          transition={{ duration: 0.5, delay: 0.4 }} // Smooth transitio
+          className="m-auto text-center text-white text-6xl font-bold mt-50 mb-30"
+        >
+          WHAT I DO
+        </motion.div>
         <motion.div>
-          <div className="m-auto text-center text-white text-6xl font-bold mt-60 mb-20">
-            WHAT I DO
-          </div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-9 ">
             <motion.div
-              whileHover={{
-                scale: 1.1,
-              }}
-              initial={{ opacity: 0, y: "0px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              initial={{ opacity: 0, y: "10px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               exit={{ opacity: 0 }} // Optional: Hides when removed
               transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
@@ -180,8 +178,8 @@ function Content() {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: "0px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              initial={{ opacity: 0, y: "20px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               exit={{ opacity: 0 }} // Optional: Hides when removed
               transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
@@ -201,8 +199,8 @@ function Content() {
               </p>
             </motion.div>
             <motion.div
-              initial={{ opacity: 0, y: "0px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "10px" }} // Animate when in view
+              initial={{ opacity: 0, y: "20px" }} // Initially hidden
+              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               exit={{ opacity: 0 }} // Optional: Hides when removed
               transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
