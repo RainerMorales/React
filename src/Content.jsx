@@ -28,23 +28,28 @@ function Content() {
       <main className="max-w-4xl m-auto mt-25 ">
         <div
           id="messages"
-          className="text-white fixed w-50 m-auto left-0 right-0"
+          className="text-white fixed w-50 m-auto top-20 left-0 right-0"
         ></div>
         <motion.div
-          initial={{ opacity: 0 }} // Initially hidden (opacity 0)
-          animate={{ opacity: 1 }} // Final state (opacity 1)
-          transition={{ delay: 0.2, duration: 0.5 }} // Duration of 1 second
-          className="grid lg:grid-cols-2 sm:grid-cols-1"
+          initial={{ opacity: 0, y: "20px" }} // Initially hidden
+          whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
+          transition={{ duration: 1, delay: 0.2 }} // Smooth transition
+          viewport={{ once: true }} // Repeats every time it enters view
+          className="grid lg:grid-cols-2 sm:grid-cols-1 mt-40 mb-70"
         >
           <div>
-            <img src="profile12.jpg" alt="" className="rounded m-auto w-46" />
+            <img
+              src="profile12.jpg"
+              alt=""
+              className="rounded-2xl m-auto w-70"
+            />
           </div>
-          <div className="flex flex-col items-center justify-center mt-9">
-            <p className=" font-extrabold text-white text-4xl">
+          <div className="flex flex-col items-center justify-center mt-15">
+            <p className=" font-extrabold text-5xl text-white ">
               Rainer Morales
             </p>
-            <p className="text-white font-extralight  ">Philippines</p>
-            <p className="text-white font-extralight">Web Developer</p>
+            <p className="text-white font-extralight text-xl">Philippines</p>
+            <p className="text-white font-extralight text-xl">Web Developer</p>
             <div className="flex flex-row gap-6 w-35 justify-center items-center mt-7">
               <a href="">
                 <img src="github.png" alt="" />
@@ -60,7 +65,7 @@ function Content() {
         </motion.div>
         <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12 overflow-hidden">
           <motion.div
-            initial={{ opacity: 0,x:10}} // Initially hidden
+            initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40 "
@@ -75,7 +80,7 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0,x:10}} // Initially hidden
+            initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40 "
@@ -93,7 +98,7 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0,x:10}} // Initially hidden
+            initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40"
@@ -111,7 +116,7 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0,x:10}} // Initially hidden
+            initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40"
@@ -147,14 +152,13 @@ function Content() {
           transition={{ duration: 0.5, delay: 0.4 }} // Smooth transitio
           className="m-auto text-center text-white text-6xl font-bold mt-50 mb-30"
         >
-          WHAT I DO
+          WHAT I <span className="text-blue-600 outline-0">DO</span>
         </motion.div>
         <motion.div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-9 ">
             <motion.div
               initial={{ opacity: 0, y: "10px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-  
               transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
@@ -175,7 +179,6 @@ function Content() {
             <motion.div
               initial={{ opacity: 0, y: "20px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-  
               transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
@@ -196,7 +199,6 @@ function Content() {
             <motion.div
               initial={{ opacity: 0, y: "20px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-  
               transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
