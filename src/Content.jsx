@@ -25,7 +25,7 @@ function Content() {
   };
   return (
     <>
-      <main className="max-w-4xl m-auto mt-25">
+      <main className="max-w-4xl m-auto mt-25 ">
         <div
           id="messages"
           className="text-white fixed w-50 m-auto left-0 right-0"
@@ -58,11 +58,10 @@ function Content() {
             </div>
           </div>
         </motion.div>
-        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12">
+        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12 overflow-hidden">
           <motion.div
-            initial={{ opacity: 0}} // Initially hidden
-            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
-            exit={{ opacity: 0 }} // Optional: Hides when removed
+            initial={{ opacity: 0,x:10}} // Initially hidden
+            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40 "
           >
@@ -76,9 +75,8 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0}} // Initially hidden
-            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
-            exit={{ opacity: 0 }} // Optional: Hides when removed
+            initial={{ opacity: 0,x:10}} // Initially hidden
+            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40 "
           >
@@ -95,9 +93,8 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0}} // Initially hidden
-            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
-            exit={{ opacity: 0 }} // Optional: Hides when removed
+            initial={{ opacity: 0,x:10}} // Initially hidden
+            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40"
           >
@@ -114,9 +111,8 @@ function Content() {
             </p>
           </motion.div>
           <motion.div
-            initial={{ opacity: 0}} // Initially hidden
-            whileInView={{ opacity: 1, x: "0px" }} // Animate when in view
-            exit={{ opacity: 0 }} // Optional: Hides when removed
+            initial={{ opacity: 0,x:10}} // Initially hidden
+            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
             className="ml-7 border-l-3 border-blue-700 h-40"
           >
@@ -148,7 +144,6 @@ function Content() {
         <motion.div
           initial={{ opacity: 0, y: "40px" }} // Initially hidden
           whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-          exit={{ opacity: 0 }} // Optional: Hides when removed
           transition={{ duration: 0.5, delay: 0.4 }} // Smooth transitio
           className="m-auto text-center text-white text-6xl font-bold mt-50 mb-30"
         >
@@ -159,7 +154,7 @@ function Content() {
             <motion.div
               initial={{ opacity: 0, y: "10px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              exit={{ opacity: 0 }} // Optional: Hides when removed
+  
               transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
@@ -180,7 +175,7 @@ function Content() {
             <motion.div
               initial={{ opacity: 0, y: "20px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              exit={{ opacity: 0 }} // Optional: Hides when removed
+  
               transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
@@ -201,7 +196,7 @@ function Content() {
             <motion.div
               initial={{ opacity: 0, y: "20px" }} // Initially hidden
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              exit={{ opacity: 0 }} // Optional: Hides when removed
+  
               transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
               className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
@@ -223,7 +218,7 @@ function Content() {
           <motion.button
             initial={{ opacity: 0 }} // Initially hidden (opacity 0)
             animate={{ opacity: 1 }} // Final state (opacity 1)
-            transition={{ delay: 1, duration: 0.5 }} // Duration of 1 second
+            transition={{ delay: 1.5, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
             className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
