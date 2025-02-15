@@ -23,6 +23,7 @@ function Content() {
       }
     }, 3000);
   };
+
   return (
     <>
       <main className="max-w-4xl m-auto mt-25 ">
@@ -31,47 +32,63 @@ function Content() {
           className="text-white fixed w-50 m-auto top-20 left-0 right-0"
         ></div>
         <motion.div
-          initial={{ opacity: 0, y: "20px" }} // Initially hidden
-          whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-          transition={{ duration: 1, delay: 0.2 }} // Smooth transition
-          viewport={{ once: true }} // Repeats every time it enters view
-          className="grid lg:grid-cols-2 sm:grid-cols-1 mt-40 mb-70"
+          // initial={{ opacity: 0 }} // Initially hidden
+          // whileInView={{ opacity: 1 }} // Animate when in view
+          // transition={{ duration: 1, delay: 0.2 }} // Smooth transition
+          // viewport={{ once: true }} // Repeats every time it enters view
+          className="grid lg:grid-cols-2 sm:grid-cols-1 mt-30 mb-40 gap-10"
         >
-          <div>
+          <div className="m-auto">
+            <motion.p
+              initial={{ opacity: 0, x: 10 }} // Initially hidden
+              animate={{ opacity: 1, x: 0 }} // Animate when in view
+              transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
+              className=" font-extrabold text-7xl text-white"
+            >
+              HI<span className="text-blue-600">!</span>
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0, x: 10 }} // Initially hidden
+              animate={{ opacity: 1, x: 0 }} // Animate when in view
+              transition={{ duration: 0.5, delay: 1}} // Smooth transition
+              className=" font-extrabold text-5xl text-white"
+            >
+              I'M Rainer
+            </motion.p>
+            <motion.p
+              initial={{ opacity: 0 }} // Initially hidden
+              animate={{ opacity: 1 }} // Animate when in view
+              transition={{ duration: 0.5, delay: 2 }} // Smooth transition
+              className=" font-extrabold text-5xl text-white"
+            >
+              WEB <span className="text-blue-600">DEVELOPER</span>
+            </motion.p>
+          </div>
+          <div className="">
             <img
               src="profile12.jpg"
               alt=""
-              className="rounded-2xl m-auto w-70"
+              className="rounded-2xl m-auto w-80"
             />
           </div>
-          <div className="flex flex-col items-center justify-center mt-15">
-            <p className=" font-extrabold text-5xl text-white ">
-              Rainer Morales
-            </p>
-            <p className="text-white font-extralight text-xl">Philippines</p>
-            <p className="text-white font-extralight text-xl">Web Developer</p>
-            <div className="flex flex-row gap-6 w-35 justify-center items-center mt-7">
-              <a href="">
-                <img src="github.png" alt="" />
-              </a>
-              <a href="https://www.facebook.com/ka.rainerr">
-                <img src="facebook.png" alt="" />
-              </a>
-              <a href="https://www.instagram.com/ka.rainer">
-                <img src="instagram.png" alt="" />
-              </a>
-            </div>
-          </div>
         </motion.div>
-        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 mt-12 overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }} // Initially hidden
+          whileInView={{ opacity: 1 }} // Animate when in view
+          transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
+          className="ml-7 text-left text-white text-5xl font-bold mt-70 mb-30 overflow-hidden"
+        >
+          ABOUT <span className="text-blue-600 outline-0">ME</span>
+        </motion.div>
+        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 overflow-hidden">
           <motion.div
             initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-            className="ml-7 border-l-3 border-blue-700 h-40 "
+            className="ml-7 border-l-3 border-blue-700 h-40  "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">ABOUT</p>
+              <p className="text-white font-extrabold text-lg">SUMMARY</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               I aim to secure a position in the IT or management sectors, which
@@ -125,22 +142,22 @@ function Content() {
               <p className="text-white font-extrabold text-lg">TECH STACK</p>
             </div>
             <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 HTML
               </span>
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 CSS
               </span>
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 JAVASCRIPT
               </span>
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 BOOTSTRAP
               </span>
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 TAILWIND CSS
               </span>
-              <span className="border-1 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
+              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
                 REACT JS
               </span>
             </p>
@@ -220,7 +237,7 @@ function Content() {
           <motion.button
             initial={{ opacity: 0 }} // Initially hidden (opacity 0)
             animate={{ opacity: 1 }} // Final state (opacity 1)
-            transition={{ delay: 1.5, duration: 0.5 }} // Duration of 1 second
+            transition={{ delay: 2, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
             className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
