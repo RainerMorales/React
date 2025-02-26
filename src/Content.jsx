@@ -38,19 +38,19 @@ function Content() {
           viewport={{ once: true }} // Repeats every time it enters view
           className="grid lg:grid-cols-2 sm:grid-cols-1 mt-30 mb-40 gap-10"
         >
-          <div className="m-auto">
+          <div className="m-auto flex flex-col">
             <p
               initial={{ opacity: 0, x: 10 }} // Initially hidden
               animate={{ opacity: 1, x: 0 }} // Animate when in view
               transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
               className=" font-extrabold text-7xl text-white"
             >
-              HI<span className="text-blue-600">!</span>
+              HI<span className="">!</span>
             </p>
             <p
               initial={{ opacity: 0, x: 10 }} // Initially hidden
               animate={{ opacity: 1, x: 0 }} // Animate when in view
-              transition={{ duration: 0.5, delay: 1}} // Smooth transition
+              transition={{ duration: 0.5, delay: 1 }} // Smooth transition
               className=" font-extrabold text-5xl text-white"
             >
               I'M Rainer
@@ -61,9 +61,20 @@ function Content() {
               transition={{ duration: 0.5, delay: 2 }} // Smooth transition
               className=" font-extrabold text-5xl text-white"
             >
-              WEB <span className="text-blue-600">DEVELOPER</span> <br />
-              <span className="font-extralight text-lg">PHILIPPINES</span>
+              Web<span className="text-blue-600">Developer</span> <br />
             </p>
+            <div className="font-extralight text-lg text-white">Philippines</div>
+            <div className="flex mt-6 m-auto gap-6 w-32">
+              <a href="">
+                <img src="github.png" alt="" />
+              </a>
+              <a href="https://www.facebook.com/ka.rainerr">
+                <img src="facebook.png" alt="" />
+              </a>
+              <a href="https://www.instagram.com/ka.rainer">
+                <img src="instagram.png" alt="" />
+              </a>
+            </div>
           </div>
           <div className="">
             <img
@@ -86,7 +97,7 @@ function Content() {
             initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-            className="ml-7 border-l-3 border-blue-700 h-40  "
+            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40  "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">SUMMARY</p>
@@ -101,7 +112,7 @@ function Content() {
             initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
-            className="ml-7 border-l-3 border-blue-700 h-40 "
+            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40 "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">EDUCATION</p>
@@ -119,7 +130,7 @@ function Content() {
             initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
-            className="ml-7 border-l-3 border-blue-700 h-40"
+            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">EXPERIENCE</p>
@@ -137,7 +148,7 @@ function Content() {
             initial={{ opacity: 0, x: 10 }} // Initially hidden
             whileInView={{ opacity: 1, x: 0 }} // Animate when in view
             transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
-            className="ml-7 border-l-3 border-blue-700 h-40"
+            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
               <p className="text-white font-extrabold text-lg">TECH STACK</p>
@@ -234,7 +245,7 @@ function Content() {
             </motion.div>
           </div>
         </motion.div>
-        <div className="fixed bottom-6 right-3 mx-w-20 ">
+        {/* <div className="fixed bottom-6 right-3 mx-w-20 ">
           <motion.button
             initial={{ opacity: 0 }} // Initially hidden (opacity 0)
             animate={{ opacity: 1 }} // Final state (opacity 1)
@@ -248,7 +259,7 @@ function Content() {
             </span>
             Message me!
           </motion.button>
-        </div>
+        </div> */}
       </main>
     </>
   );

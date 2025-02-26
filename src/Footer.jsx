@@ -13,8 +13,9 @@ function Footer(){
               <img src="instagram.png" alt="" />
             </a>
           </div> */}
-          <span className="text-center text-white">©2025 Rainer Morales</span>
-          
+          <div className="text-center text-sm text-white">
+            Copyright © 2025 <span className="font-bold">Rainer Morales </span>All Right Reserved
+          </div>
         </footer>
       </>
     );
