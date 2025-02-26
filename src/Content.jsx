@@ -32,37 +32,38 @@ function Content() {
           className="text-white fixed w-50 m-auto top-20 left-0 right-0"
         ></div>
         <motion.div
-          // initial={{ opacity: 0 }} // Initially hidden
-          // whileInView={{ opacity: 1 }} // Animate when in view
-          // transition={{ duration: 1, delay: 0.2 }} // Smooth transition
-          // viewport={{ once: true }} // Repeats every time it enters view
+          initial={{ opacity: 0 }} // Initially hidden
+          whileInView={{ opacity: 1 }} // Animate when in view
+          transition={{ duration: 1, delay: 0.2 }} // Smooth transition
+          viewport={{ once: true }} // Repeats every time it enters view
           className="grid lg:grid-cols-2 sm:grid-cols-1 mt-30 mb-40 gap-10"
         >
           <div className="m-auto">
-            <motion.p
+            <p
               initial={{ opacity: 0, x: 10 }} // Initially hidden
               animate={{ opacity: 1, x: 0 }} // Animate when in view
               transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
               className=" font-extrabold text-7xl text-white"
             >
               HI<span className="text-blue-600">!</span>
-            </motion.p>
-            <motion.p
+            </p>
+            <p
               initial={{ opacity: 0, x: 10 }} // Initially hidden
               animate={{ opacity: 1, x: 0 }} // Animate when in view
               transition={{ duration: 0.5, delay: 1}} // Smooth transition
               className=" font-extrabold text-5xl text-white"
             >
               I'M Rainer
-            </motion.p>
-            <motion.p
+            </p>
+            <p
               initial={{ opacity: 0 }} // Initially hidden
               animate={{ opacity: 1 }} // Animate when in view
               transition={{ duration: 0.5, delay: 2 }} // Smooth transition
               className=" font-extrabold text-5xl text-white"
             >
-              WEB <span className="text-blue-600">DEVELOPER</span>
-            </motion.p>
+              WEB <span className="text-blue-600">DEVELOPER</span> <br />
+              <span className="font-extralight text-lg">PHILIPPINES</span>
+            </p>
           </div>
           <div className="">
             <img
@@ -237,7 +238,7 @@ function Content() {
           <motion.button
             initial={{ opacity: 0 }} // Initially hidden (opacity 0)
             animate={{ opacity: 1 }} // Final state (opacity 1)
-            transition={{ delay: 2, duration: 0.5 }} // Duration of 1 second
+            transition={{ delay: 1, duration: 0.5 }} // Duration of 1 second
             onClick={message}
             type="button"
             className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
