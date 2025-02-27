@@ -16,25 +16,9 @@ function Header() {
           >
             Port<span className="text-white">folio</span>
           </a>
-          {/* <div className="hidden sm:flex gap-6 w-30">
-            <a href="">
-              <img src="github.png" alt="" />
-            </a>
-            <a href="https://www.facebook.com/ka.rainerr">
-              <img src="facebook.png" alt="" />
-            </a>
-            <a href="https://www.instagram.com/ka.rainer">
-              <img src="instagram.png" alt="" />
-            </a>
-          </div> */}
         </div>
       </motion.nav>
     </>
   );
-  {
-    /* <div className="hidden gap-6 w-35 mt-7">
-              
-            </div> */
-  }
 }
 export default Header;

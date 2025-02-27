@@ -1,10 +1,9 @@
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
+
+import Header from "./component/Header";
+import Content from "./component/Content";
+import Footer from "./component/Footer";
 function App() {
-  // const handleClick = () => {
-  //   console.log("Button clicked!");
-  // };
+
   return (
     <>
       <Header></Header>
@@ -12,8 +11,6 @@ function App() {
       <Footer></Footer>
     </>
   );
- 
 }
 
 export default App;
-
