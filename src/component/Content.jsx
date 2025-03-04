@@ -26,7 +26,7 @@ function Content() {
 
   return (
     <>
-      <main className="max-w-4xl m-auto mt-25 ">
+      <main className="max-w-4xl m-auto mt-25">
         <div
           id="messages"
           className="text-white fixed w-50 m-auto top-20 left-0 right-0"
@@ -45,7 +45,7 @@ function Content() {
               transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
               className=" font-extrabold text-7xl text-white"
             >
-              HI<span className="">!</span>
+              Hi<span className="">!</span>
             </p>
             <p
               initial={{ opacity: 0, x: 10 }} // Initially hidden
@@ -90,7 +90,7 @@ function Content() {
           transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
           className="ml-7 text-left text-white text-5xl font-bold mt-70 mb-30 overflow-hidden"
         >
-          ABOUT <span className="text-blue-600 outline-0">ME</span>
+          About <span className="text-blue-600 outline-0">Me</span>
         </motion.div>
         <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 overflow-hidden">
           <motion.div
@@ -100,7 +100,7 @@ function Content() {
             className="rounded-lg ml-7 border-l-7 border-blue-700 h-40  "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">SUMMARY</p>
+              <p className="text-white font-extrabold text-lg">Summary</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               I aim to secure a position in the IT or management sectors, which
@@ -115,7 +115,7 @@ function Content() {
             className="rounded-lg ml-7 border-l-7 border-blue-700 h-40 "
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">EDUCATION</p>
+              <p className="text-white font-extrabold text-lg">Education</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               <span className="font-bold">
@@ -133,7 +133,7 @@ function Content() {
             className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">EXPERIENCE</p>
+              <p className="text-white font-extrabold text-lg">Experience</p>
             </div>
             <p className="px-7 mt-2 text-white font-light">
               <span className="font-bold">
@@ -151,7 +151,7 @@ function Content() {
             className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
           >
             <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">TECH STACK</p>
+              <p className="text-white font-extrabold text-lg">Tech Stack</p>
             </div>
             <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
               <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
@@ -181,7 +181,7 @@ function Content() {
           transition={{ duration: 0.5, delay: 0.4 }} // Smooth transitio
           className="m-auto text-center text-white text-6xl font-bold mt-50 mb-30"
         >
-          WHAT I <span className="text-blue-600 outline-0">DO</span>
+          What I <span className="text-blue-600 outline-0">Do</span>
         </motion.div>
         <motion.div>
           <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-9 ">
@@ -190,7 +190,7 @@ function Content() {
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
+              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
@@ -210,7 +210,7 @@ function Content() {
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
+              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
@@ -230,7 +230,7 @@ function Content() {
               whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
               transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
               viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto shadow-md shadow-blue-600 rounded-lg h-full w-70"
+              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
             >
               <img
                 className="w-20 m-auto"
