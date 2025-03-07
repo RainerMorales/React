@@ -26,7 +26,7 @@ function Content() {
 
   return (
     <>
-      <main className="max-w-4xl m-auto mt-25">
+      <main className="pt-25">
         <div
           id="messages"
           className="text-white fixed w-50 m-auto top-20 left-0 right-0"
@@ -36,7 +36,7 @@ function Content() {
           whileInView={{ opacity: 1 }} // Animate when in view
           transition={{ duration: 1, delay: 0.2 }} // Smooth transition
           viewport={{ once: true }} // Repeats every time it enters view
-          className="grid lg:grid-cols-2 sm:grid-cols-1 mt-30 mb-40 gap-10"
+          className="max-w-4xl m-auto grid lg:grid-cols-2 sm:grid-cols-1 mb-40 gap-10"
         >
           <div className="m-auto flex flex-col">
             <p
@@ -63,7 +63,9 @@ function Content() {
             >
               Web<span className="text-blue-600">Developer</span> <br />
             </p>
-            <div className="font-extralight text-lg text-white">Philippines</div>
+            <div className="font-extralight text-lg text-white opacity-80">
+              Philippines
+            </div>
             <div className="flex mt-6 m-auto gap-6 w-32">
               <a href="">
                 <img src="github.png" alt="" />
@@ -84,182 +86,86 @@ function Content() {
             />
           </div>
         </motion.div>
-        <motion.div
-          initial={{ opacity: 0 }} // Initially hidden
-          whileInView={{ opacity: 1 }} // Animate when in view
-          transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-          className="ml-7 text-left text-white text-5xl font-bold mt-70 mb-30 overflow-hidden"
-        >
-          About <span className="text-blue-600 outline-0">Me</span>
-        </motion.div>
-        <div className="gap-7 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-2 overflow-hidden">
-          <motion.div
-            initial={{ opacity: 0, x: 10 }} // Initially hidden
-            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
-            transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40  "
-          >
-            <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Summary</p>
-            </div>
-            <p className="px-7 mt-2 text-white font-light">
-              I aim to secure a position in the IT or management sectors, which
-              will allow me to utilize my education and skills to contribute to
-              the company's operations.
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 10 }} // Initially hidden
-            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
-            transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
-            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40 "
-          >
-            <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Education</p>
-            </div>
-            <p className="px-7 mt-2 text-white font-light">
-              <span className="font-bold">
-                Eastwoods Professional College of Science and Technology
-                <br></br>
-              </span>
-              Bachelor of Science in Information Technology <br />
-              2020-2024
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 10 }} // Initially hidden
-            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
-            transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
-            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
-          >
-            <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Experience</p>
-            </div>
-            <p className="px-7 mt-2 text-white font-light">
-              <span className="font-bold">
-                Centro Medico De Santisimo Rosario
-              </span>
-              <br />
-              Technical Support - Intern <br />
-              March 2024 - June 2024
-            </p>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 10 }} // Initially hidden
-            whileInView={{ opacity: 1, x: 0 }} // Animate when in view
-            transition={{ duration: 0.5, delay: 0.4 }} // Smooth transition
-            className="rounded-lg ml-7 border-l-7 border-blue-700 h-40"
-          >
-            <div className="flex items-center gap-2 px-7 mt-2">
-              <p className="text-white font-extrabold text-lg">Tech Stack</p>
-            </div>
-            <p className="px-7 mt-2 text-white font-light flex flex-wrap gap-2">
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                HTML
-              </span>
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                CSS
-              </span>
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                JAVASCRIPT
-              </span>
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                BOOTSTRAP
-              </span>
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                TAILWIND CSS
-              </span>
-              <span className="border-2  text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-full">
-                REACT JS
-              </span>
-            </p>
-          </motion.div>
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: "40px" }} // Initially hidden
-          whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-          transition={{ duration: 0.5, delay: 0.4 }} // Smooth transitio
-          className="m-auto text-center text-white text-6xl font-bold mt-50 mb-30"
-        >
-          What I <span className="text-blue-600 outline-0">Do</span>
-        </motion.div>
-        <motion.div>
-          <div className="text-white grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-9 ">
-            <motion.div
-              initial={{ opacity: 0, y: "10px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              transition={{ duration: 0.5, delay: 0.1 }} // Smooth transition
-              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
-            >
-              <img
-                className="w-20 m-auto"
-                src="front.png"
-                alt="Front-End Development"
-              />
-              <p className=" text-center font-bold text-white">
-                Front-End Development
-              </p>
-              <p className="text-center font-light m-auto py-4">
-                Front-end Developer specializing in HTML, CSS, and JavaScript,
-                with experience using JS frameworks like ReactJS.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: "20px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              transition={{ duration: 0.5, delay: 0.2 }} // Smooth transition
-              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
-            >
-              <img
-                className="w-20 m-auto"
-                src="responsive.png"
-                alt="Responsive Design"
-              />
-              <p className="text-center font-bold text-white">
-                Responsive Design
-              </p>
-              <p className="text-center font-light m-auto py-4">
-                Experience in creating responsive designs that adapt seamlessly
-                to different screen sizes and devices.
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, y: "20px" }} // Initially hidden
-              whileInView={{ opacity: 1, y: "0px" }} // Animate when in view
-              transition={{ duration: 0.5, delay: 0.3 }} // Smooth transition
-              viewport={{ once: false, amount: 0.5 }} // Repeats every time it enters view
-              className=" items-center gap-3 p-6 m-auto border-blue-600 border-2 shadow-md shadow-blue-600 rounded-lg h-full w-70"
-            >
-              <img
-                className="w-20 m-auto"
-                src="design.png"
-                alt="UI/UX Design"
-              />
-              <p className="text-center font-bold text-white">UI/UX Design</p>
-              <p className="text-center font-light m-auto py-4">
-                Good UI/UX design helps users navigate the site easily, and I
-                implement that through clean front-end development.
-              </p>
-            </motion.div>
+        <div className="max-w-6xl m-auto p-4 text-white">
+          <div className="p-8 font-bold text-white text-3xl">
+            <span className="text-blue-600">About</span> Me
           </div>
-        </motion.div>
-        {/* <div className="fixed bottom-6 right-3 mx-w-20 ">
-          <motion.button
-            initial={{ opacity: 0 }} // Initially hidden (opacity 0)
-            animate={{ opacity: 1 }} // Final state (opacity 1)
-            transition={{ delay: 1, duration: 0.5 }} // Duration of 1 second
-            onClick={message}
-            type="button"
-            className="flex m-auto items-center text-black  bg-white hover:bg-gradient-to-bl focus:ring-4 focus:outline-none font-bold rounded-4xl text-sm px-7 py-2.5 whitespace-normal "
-          >
-            <span>
-              <img src="text.gif" alt="" width={30} />
-            </span>
-            Message me!
-          </motion.button>
-        </div> */}
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-3 md:grid-rows-2 gap-2">
+            <div className="col-span-1  order-1 md:order-1  border-2 border-gray-800 rounded-lg p-10">
+              <div className="flex items-center gap-2">
+                <div>
+                  <img className="w-4" src="./info.png" alt="" />
+                </div>
+                <div className="font-bold text-white text-xl">Summary</div>
+              </div>
+              <div className="font-light p-2">
+                I aim to secure a position in the IT or management sectors,
+                which will allow me to utilize my education and skills to
+                contribute to the company's operations.
+              </div>
+            </div>
+            <div className="col-span-1 row-span-2 order-3 md:order-2  border-2 border-gray-800 rounded-lg p-10">
+              <div className="flex items-center gap-2">
+                <div>
+                  <img className="w-5" src="./code.png" alt="" />
+                </div>
+                <div className="font-bold text-white text-xl">Tech Stack</div>
+              </div>
+              <div className="">
+                <div className=" opacity-60 mt-4">Front-End</div>
+                <ul className="flex flex-wrap gap-2">
+                  <li>
+                    <div class="badge badge-ghost">HTML</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">CSS</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">Javascript</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">Tailwind CSS</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">Bootsrap</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">React JS</div>
+                  </li>
+                </ul>
+                <div className="p-2 opacity-60 mt-4">Developer Tools</div>
+                <ul className="flex flex-wrap gap-2">
+                  <li>
+                    <div class="badge badge-ghost">Git</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">Github</div>
+                  </li>
+                  <li>
+                    <div class="badge badge-ghost">VS Code</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-span-1  order-2 md:order-3  border-2 border-gray-800 rounded-lg p-10">
+              <div className="flex items-center gap-2">
+                <div>
+                  <img className="w-5" src="./education.png" alt="" />
+                </div>
+                <div className="font-bold text-white text-xl">Education</div>
+              </div>
+              <div className="font-light p-2">
+                <div className="font-medium">
+                  Eastwoods Proffesional College of Science and Technology
+                </div>
+                <div className="pt-2">
+                  BS in Information Technology{" "}
+                  <div class="badge badge-ghost">2024</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
     </>
   );
