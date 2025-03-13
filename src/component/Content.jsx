@@ -1,7 +1,6 @@
 import { motion } from "motion/react";
 
 function Content() {
-
   return (
     <>
       <main className="pt-25">
@@ -37,9 +36,9 @@ function Content() {
               initial={{ opacity: 0 }} // Initially hidden
               animate={{ opacity: 1 }} // Animate when in view
               transition={{ duration: 0.5, delay: 2 }} // Smooth transition
-              className=" font-extrabold text-5xl text-white"
+              className=" font-extrabold text-2xl text-white"
             >
-              Web<span className="text-blue-600">Developer</span> <br />
+              Front-End <span className="text-blue-600">Developer</span> <br />
             </p>
             <div className="font-extralight text-lg text-white opacity-80">
               Philippines
@@ -58,17 +57,15 @@ function Content() {
           </div>
           <div className="">
             <img
-              src="profile12.jpg"
+              src="Profile123.jpg"
               alt=""
               className="rounded-2xl m-auto w-80"
             />
           </div>
         </motion.div>
         <div className="max-w-6xl m-auto p-4 text-white">
-          <div className="flex w-full flex-col">
-            <div className="divider divider-primary text-2xl font-bold ">
-              About Me
-            </div>
+          <div className="flex justify-center gap-2 text-3xl font-bold">
+            About<span className="text-blue-600">Me</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 mt-16 mb-16">
             <div className="col-span-1  order-1 md:order-1  border-2 border-gray-900 rounded p-10">
@@ -78,7 +75,7 @@ function Content() {
                 </div>
                 <div className="font-bold text-white text-xl">Summary</div>
               </div>
-              <div className="font-light p-2 ">
+              <div className="font-light p-2 opacity-80 ">
                 I aim to secure a position in the IT or management sectors,
                 which will allow me to utilize my education and skills to
                 contribute to the company's operations.
@@ -136,21 +133,19 @@ function Content() {
                 </div>
                 <div className="font-bold text-white text-xl ">Education</div>
               </div>
-              <div className="font-light p-2 ">
-                <div className="font-medium ">
+              <div className="font-light p-2  ">
+                <div className="font-medium opacity-90 ">
                   Eastwoods Proffesional College of Science and Technology
                 </div>
-                <div className="pt-2">
-                  BS in Information Technology{" "}
+                <div className="pt-2 opacity-80">
+                  BS in Information Technology
                   <span class="badge badge-sm badge-ghost">2024</span>
                 </div>
               </div>
             </div>
           </div>
-          <div className="flex w-full flex-col">
-            <div className="divider divider-primary text-2xl font-bold">
-              What I Do
-            </div>
+          <div className="flex justify-center gap-2 text-3xl font-bold">
+            What I<span className="text-blue-600">Do</span>
           </div>
           <div className="grid grid-rows-3">
             <div></div>

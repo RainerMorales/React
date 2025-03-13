@@ -12,7 +12,7 @@ function Header() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a
             href="index.html"
-            className="text-blue-600 text-2xl font-extrabold"
+            className="text-blue-600 text-2xl font-bold"
           >
             Port<span className="text-white">folio</span>
           </a>
