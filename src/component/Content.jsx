@@ -38,19 +38,38 @@ function Content() {
               transition={{ duration: 0.5, delay: 2 }} // Smooth transition
               className=" font-extrabold text-2xl text-white"
             >
-              Front-End <span className="text-blue-600">Developer</span> <br />
+              Front-End{" "}
+              <motion.span
+                animate={{
+                  backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                }}
+                transition={{ repeat: Infinity, duration: 3, ease: "linear" }}
+                style={{ backgroundSize: "200% 200%" }}
+                className="bg-gradient-to-r from-blue-600 via-cyan-400 to-teal-500 bg-clip-text text-transparent"
+              >
+                Developer
+              </motion.span>{" "}
+              <br />
             </p>
             <div className="font-extralight text-lg text-white opacity-80">
               Philippines
             </div>
             <div className="flex mt-10 m-auto gap-6 w-40">
-              <a href="">
+              <a className="tooltip tooltip-info" data-tip="Github" href="">
                 <img src="github.png" alt="" />
               </a>
-              <a href="https://www.facebook.com/ka.rainerr">
+              <a
+                className="tooltip tooltip-info"
+                data-tip="Facebook"
+                href="https://www.facebook.com/ka.rainerr"
+              >
                 <img src="facebook.png" alt="" />
               </a>
-              <a href="https://www.instagram.com/ka.rainer">
+              <a
+                className="tooltip tooltip-info"
+                data-tip="Instagram"
+                href="https://www.instagram.com/ka.rainer"
+              >
                 <img src="instagram.png" alt="" />
               </a>
             </div>
@@ -65,7 +84,7 @@ function Content() {
         </motion.div>
         <div className="max-w-6xl m-auto p-4 text-white">
           <div className="flex justify-center gap-2 text-3xl font-bold">
-            About<span className="text-blue-600">Me</span>
+            About<span className="text-info">Me</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 mt-16 mb-16">
             <div className="col-span-1  order-1 md:order-1  border-2 border-gray-900 rounded p-10">
@@ -145,7 +164,7 @@ function Content() {
             </div>
           </div>
           <div className="flex justify-center gap-2 text-3xl font-bold">
-            What I<span className="text-blue-600">Do</span>
+            What I<span className="text-info">Do</span>
           </div>
           <div className="grid grid-rows-3">
             <div></div>
