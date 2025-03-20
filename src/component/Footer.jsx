@@ -8,8 +8,7 @@ function Footer(){
    };
     return (
       <>
-        <footer className="bg-gray-950 text-white text-center h-16 mt-12">
-          
+        <footer className="bg-black text-white text-center h-16 mt-12">
           <div className="text-center text-sm text-white">
             Copyright © {times}<span className="font-bold"> Rainer Morales </span>All Right Reserved
           </div>
