@@ -1,7 +1,5 @@
 import { motion } from "motion/react";
-import SplitText from "../TextAnimations/SplitText/SplitText.jsx";
-import RotatingText from "../TextAnimations/RotatingText/RotatingText.jsx"
-import GradientText from "../TextAnimations/GradientText/GradientText.jsx";
+import RotatingText from "../TextAnimations/RotatingText/RotatingText.jsx";
 
 function Content() {
   return (
@@ -23,8 +21,8 @@ function Content() {
               <div className=" font-extrabold text-5xl text-white">I'M</div>
               <div className="">
                 <RotatingText
-                  texts={["Rainer", "21"]}
-                  mainClassName="px-2 sm:px-2 md:px-3 font-extrabold text-5xl text-white overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  texts={["Rainer", "22"]}
+                  mainClassName="px-2 sm:px-2 md:px-3 font-extrabold text-blue-600 text-5xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -32,34 +30,15 @@ function Content() {
                   staggerDuration={0.025}
                   splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
                   transition={{ type: "spring", damping: 30, stiffness: 200 }}
-                  rotationInterval={3000}
+                  rotationInterval={4000}
                 />
               </div>
             </div>
-            <div className=" font-bold text-xl text-white opacity-80">
+            <div className="text-md text-white opacity-80">
               Front-End Developer
             </div>
-            <div className="font-extralight text-lg text-white opacity-80">
+            <div className="font-extralight text-md text-white opacity-80">
               Philippines
-            </div>
-            <div className="flex mt-10 m-auto gap-6 w-40">
-              <a className="tooltip tooltip-info" data-tip="Github" href="">
-                <img src="github.png" alt="" />
-              </a>
-              <a
-                className="tooltip tooltip-info"
-                data-tip="Facebook"
-                href="https://www.facebook.com/ka.rainerr"
-              >
-                <img src="facebook.png" alt="" />
-              </a>
-              <a
-                className="tooltip tooltip-info"
-                data-tip="Instagram"
-                href="https://www.instagram.com/ka.rainer"
-              >
-                <img src="instagram.png" alt="" />
-              </a>
             </div>
           </div>
           <div className="">
@@ -75,20 +54,20 @@ function Content() {
             About<span className="text-info">Me</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 mt-10 mb-16">
-            <div className="col-span-1 border border-zinc-800 rounded-xl    order-1 md:order-1   p-6">
-              <div className="flex items-center gap-2">
+            <div className="col-span-1 border border-zinc-800 bg-zinc-950  rounded-xl    order-1 md:order-1   p-6">
+              <div className="flex items-center gap-2 ">
                 <div>
                   <img className="w-4" src="./info.png" alt="" />
                 </div>
                 <div className="font-bold text-white text-xl">Summary</div>
               </div>
-              <div className="font-light p-2 opacity-80 ">
+              <div className="font-light p-2 opacity-80">
                 I aim to secure a position in the IT or management sectors,
                 which will allow me to utilize my education and skills to
                 contribute to the company's operations.
               </div>
             </div>
-            <div className="col-span-1 border border-zinc-800 rounded-xl   row-span-2 order-3 md:order-2   p-6">
+            <div className="col-span-1 border border-zinc-800 bg-zinc-950 rounded-xl   row-span-2 order-3 md:order-2   p-6">
               <div className="flex items-center gap-2">
                 <div>
                   <img className="w-5" src="./code.png" alt="" />
@@ -99,51 +78,66 @@ function Content() {
                 <div className=" opacity-80">Front-End</div>
                 <ul className="flex flex-wrap gap-2">
                   <li>
-                    <div className="badge badge-ghost rounded-full">HTML</div>
+                    <div className="badge badge-neutral rounded-full">HTML</div>
                   </li>
                   <li>
-                    <div className="badge badge-ghost rounded-full">CSS</div>
+                    <div className="badge badge-neutral rounded-full">CSS</div>
                   </li>
                   <li>
-                    <div className="badge badge-ghost rounded-full">
+                    <div className="badge badge-neutral rounded-full">
                       Javascript
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-ghost rounded-full">
+                    <div className="badge badge-neutral rounded-full">
                       Tailwind CSS
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-ghost rounded-full">
+                    <div className="badge badge-neutral rounded-full">
                       Bootstrap
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-ghost rounded-full">
+                    <div className="badge badge-neutral rounded-full">
                       React JS
+                    </div>
+                  </li>
+                  <li>
+                    <div className="badge badge-neutral rounded-full">Vite</div>
+                  </li>
+                  <li>
+                    <div className="badge badge-neutral rounded-full">
+                      Node js
                     </div>
                   </li>
                 </ul>
               </div>
               <div className="p-4 space-y-2">
-                <div className="opacity-80">Developer Tools</div>
-                <ul className="flex flex-wrap gap-2">
-                  <li>
-                    <div className="badge badge-ghost rounded-full">Git</div>
-                  </li>
-                  <li>
-                    <div className="badge badge-ghost rounded-full">Github</div>
-                  </li>
-                  <li>
-                    <div className="badge badge-ghost rounded-full">
-                      VS Code
-                    </div>
-                  </li>
+                <div className="opacity-80 text-sm font-semibold text-white">
+                  Developer Tools
+                </div>
+                <ul className="flex flex-wrap gap-2 mt-1">
+                  {[
+                    "Git",
+                    "GitHub",
+                    "VS Code",
+                    "NPM",
+                    "Vercel",
+                    "Daisy UI",
+                    "Framer Motion",
+                    "React Bits",
+                  ].map((tool) => (
+                    <li key={tool}>
+                      <div className="badge badge-neutral rounded-full">
+                        {tool}
+                      </div>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div className="col-span-1 border border-zinc-800 rounded-xl    order-2 md:order-3   p-6">
+            <div className="col-span-1 border border-zinc-800 bg-zinc-950 rounded-xl    order-2 md:order-3   p-6">
               <div className="flex items-center gap-2">
                 <div>
                   <img className="w-5" src="./education.png" alt="" />
@@ -156,7 +150,7 @@ function Content() {
                 </div>
                 <div className="pt-2  flex items-center justify-between">
                   <div className="opacity-80">BS in Information Technology</div>
-                  <div className="badge badge-sm rounded-full badge-ghost">
+                  <div className="badge badge-sm rounded-full badge-neutral">
                     2024
                   </div>
                 </div>
