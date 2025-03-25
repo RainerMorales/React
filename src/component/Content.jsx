@@ -78,36 +78,36 @@ function Content() {
                 <div className=" opacity-80">Front-End</div>
                 <ul className="flex flex-wrap gap-2">
                   <li>
-                    <div className="badge badge-neutral rounded-full">HTML</div>
+                    <div className="badge rounded-full">HTML</div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">CSS</div>
+                    <div className="badge rounded-full">CSS</div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">
+                    <div className="badge rounded-full">
                       Javascript
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">
+                    <div className="badge rounded-full">
                       Tailwind CSS
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">
+                    <div className="badge rounded-full">
                       Bootstrap
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">
+                    <div className="badge rounded-full">
                       React JS
                     </div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">Vite</div>
+                    <div className="badge rounded-full">Vite</div>
                   </li>
                   <li>
-                    <div className="badge badge-neutral rounded-full">
+                    <div className="badge rounded-full">
                       Node js
                     </div>
                   </li>
@@ -129,7 +129,7 @@ function Content() {
                     "React Bits",
                   ].map((tool) => (
                     <li key={tool}>
-                      <div className="badge badge-neutral rounded-full">
+                      <div className="badge rounded-full">
                         {tool}
                       </div>
                     </li>
@@ -158,12 +158,42 @@ function Content() {
             </div>
           </div>
           <div className="flex justify-center gap-2 text-3xl font-bold">
-            What I<span className="text-info">Do</span>
+            Recent<span className="text-info">Projects</span>
           </div>
-          <div className="grid grid-rows-3">
-            <div></div>
-            <div></div>
-            <div></div>
+          <div className="grid grid-rows-2 mt-10 mb-16  max-w-md m-auto ">
+            <div className="card border border-zinc-800 bg-zinc-950 w-full shadow-sm rounded-xl">
+              <figure>
+                <img className="w-100" src="fika.png" alt="Shoes" />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Fika</h2>
+                <p className="opacity-80">
+                  Fika is a concept, a state of mind. Slowing down, getting in
+                  touch with yourself, and connecting with the people around
+                  you. Sip coffee. Chat with loved ones. Repeat again tomorrow.
+                </p>
+                <div className="card-actions flex justify-between items-center ">
+                  <div>
+                    <ul className="flex flex-wrap gap-2 mt-1">
+                      {["HTML", "Tailwind", "React"].map((tool) => (
+                        <li key={tool}>
+                          <div className="badge badge-sm rounded-full">
+                            {tool}
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <a href="https://fika-sand.vercel.app/">
+                      <button className="btn btn-md btn-info rounded-lg">
+                        Visit
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </motion.main>
