@@ -9,17 +9,19 @@ function SocialMedia() {
         initial={{ opacity: 0 }} // Initially hidden
         whileInView={{ opacity: 1 }} // Animate when in view
         transition={{ duration: 1, delay: 0.2 }} // Smooth transition
-        className="border border-zinc-800 bg-zinc-950 rounded-xl justify-center flex gap-8 items-center   fixed w-70 h-13 bottom-10 left-1/2 -translate-x-1/2"
+        className="border border-zinc-800 bg-zinc-900 rounded-full justify-center flex gap-8 items-center   fixed w-70 h-13 bottom-10 left-1/2 -translate-x-1/2"
       >
-        <div>
-          <FaFacebookSquare size={25} />
-        </div>
-        <div>
+        <button>
+          <a href="https://www.facebook.com">
+            <FaFacebookSquare size={25} />
+          </a>
+        </button>
+        <button>
           <AiFillInstagram size={25} />
-        </div>
-        <div>
+        </button>
+        <button>
           <FaGithub size={25} />
-        </div>
+        </button>
       </motion.section>
     </>
   );

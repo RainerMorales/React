@@ -6,6 +6,18 @@ function Content() {
   
   return (
     <>
+      <input type="checkbox" id="my_modal_6" className="modal-toggle" />
+      <div className="modal" role="dialog">
+        <div className="modal-box">
+          <h3 className="text-lg font-bold">Hello!</h3>
+          <p className="py-4">This modal works with a hidden checkbox!</p>
+          <div className="modal-action">
+            <label htmlFor="my_modal_6" className="btn">
+              Close!
+            </label>
+          </div>
+        </div>
+      </div>
       <motion.main
         initial={{ opacity: 0 }} // Initially hidden
         whileInView={{ opacity: 1 }} // Animate when in view
@@ -23,8 +35,8 @@ function Content() {
               <div className=" font-extrabold text-5xl text-white">I'M</div>
               <div className="">
                 <RotatingText
-                  texts={["Rainer", "22"]}
-                  mainClassName="px-2 sm:px-2 md:px-3 font-extrabold text-blue-600 text-5xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
+                  texts={["Rainer", "Ren", "22"]}
+                  mainClassName="px-2 sm:px-2 md:px-3 font-extrabold text-accent text-5xl overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
                   animate={{ y: 0 }}
@@ -47,13 +59,13 @@ function Content() {
             <img
               src="Profile123.jpg"
               alt=""
-              className="rounded-2xl m-auto w-80"
+              className="rounded-2xl m-auto w-70"
             />
           </div>
         </div>
         <div className="p-6 m-2 text-white">
           <div className="flex justify-center gap-2 text-3xl font-bold">
-            About<span className="text-info">Me</span>
+            About<span className="text-accent">Me</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 mt-10 mb-16">
             <div className="col-span-1 border border-zinc-800 bg-zinc-950  rounded-xl    order-1 md:order-1   p-6">
@@ -148,9 +160,9 @@ function Content() {
             </div>
           </div>
           <div className="flex justify-center gap-2 text-3xl font-bold">
-            Recent<span className="text-info">Projects</span>
+            Recent<span className="text-accent">Projects</span>
           </div>
-          <div className="grid grid-rows-2 gap-4 mt-10 mb-16  max-w-md m-auto ">
+          <div className="grid md:grid-cols-2 grid-rows-2 gap-4 mt-10 mb-16 max-w-sm md:max-w-4xl m-auto ">
             <div className="card border border-zinc-800 bg-zinc-950 w-full shadow-sm rounded-xl">
               <figure>
                 <img className="w-full" src="fika.png" alt="Shoes" />
@@ -176,7 +188,7 @@ function Content() {
                   </div>
                   <div>
                     <a href="https://fika-sand.vercel.app/">
-                      <button className="btn   ">Link</button>
+                      <button className="btn btn-accent">Link</button>
                     </a>
                   </div>
                 </div>
@@ -211,10 +223,9 @@ function Content() {
                     </ul>
                   </div>
                   <div>
-                    <button className="btn"
-                      onClick={() =>
-                        toast.error("404 Not Found")
-                      }
+                    <button
+                      className="btn btn-accent"
+                      onClick={() => toast.error("404 Not Found")}
                     >
                       Visit
                     </button>
