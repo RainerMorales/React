@@ -1,7 +1,9 @@
 import { motion } from "motion/react";
 import RotatingText from "../TextAnimations/RotatingText/RotatingText.jsx";
+import toast from "react-hot-toast";
 
 function Content() {
+  
   return (
     <>
       <motion.main
@@ -84,32 +86,22 @@ function Content() {
                     <div className="badge rounded-full">CSS</div>
                   </li>
                   <li>
-                    <div className="badge rounded-full">
-                      Javascript
-                    </div>
+                    <div className="badge rounded-full">Javascript</div>
                   </li>
                   <li>
-                    <div className="badge rounded-full">
-                      Tailwind CSS
-                    </div>
+                    <div className="badge rounded-full">Tailwind CSS</div>
                   </li>
                   <li>
-                    <div className="badge rounded-full">
-                      Bootstrap
-                    </div>
+                    <div className="badge rounded-full">Bootstrap</div>
                   </li>
                   <li>
-                    <div className="badge rounded-full">
-                      React JS
-                    </div>
+                    <div className="badge rounded-full">React JS</div>
                   </li>
                   <li>
                     <div className="badge rounded-full">Vite</div>
                   </li>
                   <li>
-                    <div className="badge rounded-full">
-                      Node js
-                    </div>
+                    <div className="badge rounded-full">Node js</div>
                   </li>
                 </ul>
               </div>
@@ -129,9 +121,7 @@ function Content() {
                     "React Bits",
                   ].map((tool) => (
                     <li key={tool}>
-                      <div className="badge rounded-full">
-                        {tool}
-                      </div>
+                      <div className="badge rounded-full">{tool}</div>
                     </li>
                   ))}
                 </ul>
@@ -160,10 +150,10 @@ function Content() {
           <div className="flex justify-center gap-2 text-3xl font-bold">
             Recent<span className="text-info">Projects</span>
           </div>
-          <div className="grid grid-rows-2 mt-10 mb-16  max-w-md m-auto ">
+          <div className="grid grid-rows-2 gap-4 mt-10 mb-16  max-w-md m-auto ">
             <div className="card border border-zinc-800 bg-zinc-950 w-full shadow-sm rounded-xl">
               <figure>
-                <img className="w-100" src="fika.png" alt="Shoes" />
+                <img className="w-full" src="fika.png" alt="Shoes" />
               </figure>
               <div className="card-body">
                 <h2 className="card-title">Fika</h2>
@@ -174,8 +164,8 @@ function Content() {
                 </p>
                 <div className="card-actions flex justify-between items-center ">
                   <div>
-                    <ul className="flex flex-wrap gap-2 mt-1">
-                      {["HTML", "Tailwind", "React"].map((tool) => (
+                    <ul className="flex flex-wrap gap-2">
+                      {["React", "Tailwind", "Daisy UI"].map((tool) => (
                         <li key={tool}>
                           <div className="badge badge-sm rounded-full">
                             {tool}
@@ -186,10 +176,48 @@ function Content() {
                   </div>
                   <div>
                     <a href="https://fika-sand.vercel.app/">
-                      <button className="btn btn-md btn-info rounded-lg">
-                        Visit
-                      </button>
+                      <button className="btn   ">Link</button>
                     </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="card border border-zinc-800 bg-zinc-950 w-full shadow-sm rounded-xl">
+              <figure>
+                <img
+                  className="w-full md:w-48 rounded-lg shadow-lg"
+                  src="https://placehold.co/300x200/000000/FFFFFF?text=No+Image"
+                  alt="No Image"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">Lorem</h2>
+                <p className="opacity-80">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                  vitae, perspiciatis repellendus vel, laborum libero corrupti
+                  esse ex blanditiis officiis qui cum fuga ipsum, tenetur odit
+                  repellat accusamus hic officia!.
+                </p>
+                <div className="card-actions flex justify-between items-center ">
+                  <div>
+                    <ul className="flex flex-wrap gap-2">
+                      {["React", "Tailwind", "shadcdn"].map((tool) => (
+                        <li key={tool}>
+                          <div className="badge badge-sm rounded-full">
+                            {tool}
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <button className="btn"
+                      onClick={() =>
+                        toast.error("404 Not Found")
+                      }
+                    >
+                      Visit
+                    </button>
                   </div>
                 </div>
               </div>
